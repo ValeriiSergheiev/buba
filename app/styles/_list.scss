@@ -4,14 +4,13 @@
 	justify-content:space-between;
 	background: $bg-sm;
 	padding: 3.5rem 0 2.5rem;
-	&:first-child {
-		background: none;
-	}
 }
 
 .order-img {
-	align-self:center;
+	align-self: start;
+	flex: 1;
 	max-width: 14rem;
+	overflow: hidden;
 	img {
 		display: block;
 		max-width: 100%;
@@ -20,10 +19,21 @@
 }
 
 .order-desc {
-	padding: 0 1.5rem;
-	h1 {
+	padding: 0 3rem;
+	flex: 2;
+	p {
+		&:first-child {
+			line-height: 1.2;
+		}
+		&:last-child {
+			margin-top: 2.5rem;
+			color: $main-red;
+		}
+	}
+	small {
+		display: block;
 		margin-top: 2.5rem;
-		color: $main-red;
+		line-height: 1.2;
 	}
 }
 
@@ -32,7 +42,8 @@
 	flex: 0 0 12rem;
 	img {
 		display: block;
-		max-width: 100%;
+		width: 3.7rem;
+		height: auto;
 		height: auto;
 		margin: 0 auto;
 	}

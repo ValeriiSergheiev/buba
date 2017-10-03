@@ -1,2 +1,47 @@
 /* 3-ITEM PAGE */
+.product-photo {
+	overflow: hidden;
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.product-info {
+	background: $bg-sm;
+	padding: 6rem 0;
+}
+
+.product-price {
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	margin-bottom: 6rem;
+	h1 {
+		color: $main-red;
+	}
+	img {
+		width: 3.7rem;
+		height: auto;
+	}
+}
+
+.product-info-text {
+	h2 {
+		text-align: center;
+		padding: 0 13rem;
+		line-height: 1.2;
+	}
+	p {
+		text-align: center;
+		color: $main-grey;
+		margin-top: 3rem;
+		padding: 0 5rem;
+		line-height: 1.2;
+		&:last-child {
+			color: inherit;
+		}
+	}
+}
 /* END 3-ITEM PAGE */

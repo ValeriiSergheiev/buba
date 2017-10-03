@@ -6,9 +6,6 @@
 		height: 14rem;
 		overflow: hidden;
 		background: $bg-sm;
-		&:first-child {
-			background: none;
-		}
 		a {
 			display: flex;
 			align-items: center;
