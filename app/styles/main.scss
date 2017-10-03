@@ -10,6 +10,7 @@
 $main-red: #982128;
 $main-white: #fff;
 $main-grey: #969696;
+$bg-sm: radial-gradient(70% 60% at 50% 0, rgba(255, 255, 255, 0.15) 0.55%, rgba(255, 255, 255, 0) 63.54%);
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -26,7 +27,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'RobotoMedium', sans-serif;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: $main-white;
   line-height: 1;
   background-color: #000;
@@ -67,33 +68,47 @@ ul {
 }
 
 .container {
-  padding: 0 40px;
-  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 4rem;
 }
 
 main {
-  min-height: calc(100vh - (104px + 140px));
+  min-height: calc(100vh - (10.4rem + 14rem));
 }
 
 // Header
 header {
   display: flex;
   align-items: center;
-  height: 104px;
+  height: 10.4rem;
   background: linear-gradient(to right, #821c22 , #7e1b21);
 }
 
 .header-title {
   h2 {
-    margin-left: 100px;
+    padding: 0 10px;
+    margin-left: 90px;
+  }
+}
+
+.menu-back-btn {
+  display: block;
+  background-image: url('../images/arrow_l.svg');
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  padding-left: 64px;
+  h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
 //Footer
 footer {
-  padding: 0 40px;
-  height: 140px;
-  //background: linear-gradient(rgba(255, 255, 255, 0.1) 1.1%, rgba(255, 255, 255, 0) 100%);
+  padding: 0 4rem;
+  height: 14rem;
   background: radial-gradient(90% 60% at 50% 0, rgba(255, 255, 255, 0.15) 30.39%, rgba(255, 255, 255, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
 }
 
@@ -104,18 +119,25 @@ footer {
   justify-content: space-around;
   a {
     position: relative;
-    width: 48px;
+    width: 4.8rem;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
     span {
       display: block;
       position: absolute;
-      top: -10px;
-      left: 35px;
+      top: -1rem;
+      left: 3.5rem;
       background-color: $main-red;
-      padding: 8px 8px 6px;
-      border-radius: 8px;
+      padding: .8rem .8rem .6rem;
+      border-radius: .8rem;
     }
   }
 }
 /* END MAIN CSS */
 
 @import "home";
+@import "list";
+@import "3-item";
