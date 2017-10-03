@@ -73,6 +73,42 @@ ul {
   padding: 0 4rem;
 }
 
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.btn-primary {
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2rem 0;
+}
+
+.btn-active {
+  background: linear-gradient(#3c3c3c, #252525);
+}
+
+.btn-submit {
+  display: block;
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: red;
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 0;
+  border-radius: 5px;
+  background: linear-gradient(#B21B24, #58080D);
+}
+
 main {
   min-height: calc(100vh - (10.4rem + 14rem));
 }
@@ -141,3 +177,4 @@ footer {
 @import "home";
 @import "list";
 @import "3-item";
+@import "6-payment";

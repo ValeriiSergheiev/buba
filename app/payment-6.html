@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>www</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <!-- HOME PAGE  -->
+    <header>
+      <div class="container">
+        <div class="header-btn">
+          <a href="#" class="menu-back-btn"><h2>Выбор способа оплаты</h2></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="payment-section">
+        <div class="container">
+
+          <div class="btn-wrapper clearfix">
+            <a href="#" class="btn-primary btn-active">Картой</a>
+            <a href="#" class="btn-primary">Наличными</a>
+          </div>
+
+          <div class="payment-content">
+            <div class="select-cards">
+              <a href="#"><img src="images/visa.png" alt="visa"></a>
+              <a href="#"><img src="images/master.png" alt="master"></a>
+            </div>
+            <p>Для оплаты покупки Вы будете перенаправлены на платежный шлюз «Тинькофф банка» для ввода реквизитов Вашей карты.</p>
+            <p>После оплаты вы вернетесь в приложение и увидете номер заказа</p>
+          </div>
+
+          <a href="#" class="btn-submit">оплатить картой</a>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <a href="#"><img src="images/Info.svg" alt="info"></a>
+        <a href="#"><img src="images/Home.svg" alt="home"></a>
+        <a href="#">
+          <img src="images/Basket.svg" alt="basket">
+          <span>23000</span>
+        </a>
+      </nav>
+    </footer>
+    <!-- END HOME PAGE  -->
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+  </html>
