@@ -1,0 +1,34 @@
+/* DELIVERY PAGE */
+.delivery-section {
+	@extend .payment-section;
+}
+
+.delivery-content {
+	@extend .payment-content;
+}
+
+.delivery-form {
+	input {
+		box-sizing: border-box;
+		display: block;
+		width: 100%;
+		height: 8rem;
+		margin-bottom: 2rem;
+		border-radius: .4rem;
+		padding: 0 3rem;
+		font-size: 2.4rem;
+		font-family: 'RobotoMedium', sans-serif;
+	}
+	textarea {
+		box-sizing: border-box;
+		height: 21rem;
+		width: 100%;
+		padding: 3rem;
+		border-radius: .4rem;
+		font-size: 2.4rem;
+		font-family: 'RobotoMedium', sans-serif;
+		line-height: 1;
+		resize: none;
+	}
+}
+/* END DELIVERY PAGE */

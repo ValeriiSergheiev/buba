@@ -67,10 +67,17 @@ ul {
   padding: 0;
 }
 
+input, textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
 .container {
   box-sizing: border-box;
   width: 100%;
-  padding: 0 4rem;
+  //padding: 0 4rem;
+  padding: 0 3%;
 }
 
 .clearfix {
@@ -104,17 +111,32 @@ ul {
   max-width: 56rem;
   margin: 0 auto;
   text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   border-radius: 5px;
   background: linear-gradient(#B21B24, #58080D);
 }
 
+.btn-form {
+  width: 100%;
+  border: none;
+  font-size: 3rem;
+  color: $main-white;
+  font-family: 'RobotoMedium', sans-serif;
+  margin-top: 4.5rem;
+}
+
 main {
   min-height: calc(100vh - (10.4rem + 14rem));
+  margin-top: 10.4rem;
+  margin-bottom: 14rem;
 }
 
 // Header
 header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   height: 10.4rem;
@@ -129,11 +151,11 @@ header {
 }
 
 .menu-back-btn {
-  display: block;
+  display: inline-block;
   background-image: url('../images/arrow_l.svg');
   background-repeat: no-repeat;
   background-position: 0 center;
-  padding-left: 64px;
+  padding: 2rem 6.4rem;
   h2 {
     white-space: nowrap;
     overflow: hidden;
@@ -143,9 +165,13 @@ header {
 
 //Footer
 footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 0 4rem;
   height: 14rem;
-  background: radial-gradient(90% 60% at 50% 0, rgba(255, 255, 255, 0.15) 30.39%, rgba(255, 255, 255, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  background: #000 radial-gradient(90% 60% at 50% 0, rgba(255, 255, 255, 0.15) 30.39%, rgba(255, 255, 255, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
 }
 
 .footer-nav {
@@ -178,3 +204,4 @@ footer {
 @import "list";
 @import "3-item";
 @import "6-payment";
+@import "delivery";
