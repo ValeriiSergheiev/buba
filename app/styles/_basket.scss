@@ -1,0 +1,42 @@
+/* BASKET PAGE */
+.basket-desc {
+	@extend .order-desc;
+	p {
+		&:last-child {
+			color: $main-grey;
+			span {
+				color: $main-grey;
+				&:last-child {
+					color: $main-red;
+					margin-left: 3.5rem;
+				}
+			}
+		}
+	}
+}
+
+.basket-title-divider {
+	@extend .title-divider;
+	background: none;
+}
+
+.basket-cost {
+	padding: 6rem 0;
+	background: $bg-sm;
+	h2 {
+		margin-bottom: 2rem;
+		padding: 0 8%;
+		span {
+			font-size: 3.6rem;
+		}
+	}
+	small {
+		display: block;
+		padding: 0 5%;
+		line-height: 1.2;
+	}
+	a {
+		margin-top: 3.5rem;
+	}
+}
+/* END BASKET PAGE */
