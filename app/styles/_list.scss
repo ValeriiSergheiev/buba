@@ -9,12 +9,14 @@
 .order-img {
 	align-self: start;
 	flex: 1;
-	max-width: 14rem;
-	overflow: hidden;
-	img {
-		display: block;
-		max-width: 100%;
-		height: auto;
+	div {
+		width: 14rem;
+		height: 14rem;
+		/*img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}*/
 	}
 }
 

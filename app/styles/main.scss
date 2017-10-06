@@ -10,7 +10,7 @@
 $main-red: #982128;
 $main-white: #fff;
 $main-grey: #969696;
-$bg-sm: radial-gradient(70% 60% at 50% 0, rgba(255, 255, 255, 0.15) 0.55%, rgba(255, 255, 255, 0) 63.54%);
+$bg-sm: radial-gradient(70% 60% at 50% 0, rgba(255, 255, 255, 0.15) 0.55%, rgba(255, 255, 255, 0) 63.54%), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 1.65%);
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -111,7 +111,7 @@ input, textarea {
 
 .btn-submit {
   display: block;
-  font-size: 3rem;
+  font-size: 2.7rem;
   text-transform: uppercase;
   background-color: red;
   max-width: 56rem;
@@ -119,7 +119,7 @@ input, textarea {
   text-align: center;
   padding: 3rem 1rem;
   border-radius: 5px;
-  background: linear-gradient(#B21B24, #58080D);
+  background: linear-gradient(#B21B24, #58080D), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 1.65%);
 }
 
 .btn-form {
@@ -144,8 +144,8 @@ input, textarea {
 
 main {
   min-height: calc(100vh - (10.4rem + 14rem));
-  margin-top: 10.4rem;
-  margin-bottom: 14rem;
+  margin-top: 9.1rem;
+  margin-bottom: 12rem;
 }
 
 // Header
@@ -163,8 +163,8 @@ header {
 
 .header-title {
   h2 {
-    padding: 0 10px;
-    margin-left: 90px;
+    padding: 0 1rem;
+    margin-left: 9rem;
   }
 }
 
